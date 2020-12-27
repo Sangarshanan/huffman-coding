@@ -1,0 +1,270 @@
+// Huffman Tree
+digraph {
+	"!" [label="1-!"]
+	"(" [label="1-("]
+	"!(" [label="2-!("]
+	"!(" -> "("
+	"!(" -> "!"
+	")" [label="1-)"]
+	B [label="1-B"]
+	")B" [label="2-)B"]
+	")B" -> B
+	")B" -> ")"
+	J [label="1-J"]
+	L [label="1-L"]
+	JL [label="2-JL"]
+	JL -> L
+	JL -> J
+	M [label="1-M"]
+	"!(" [label="2-!("]
+	"M!(" [label="3-M!("]
+	"M!(" -> "!("
+	"M!(" -> M
+	")B" [label="2-)B"]
+	D [label="2-D"]
+	")BD" [label="4-)BD"]
+	")BD" -> D
+	")BD" -> ")B"
+	F [label="2-F"]
+	JL [label="2-JL"]
+	FJL [label="4-FJL"]
+	FJL -> JL
+	FJL -> F
+	W [label="2-W"]
+	"M!(" [label="3-M!("]
+	"WM!(" [label="5-WM!("]
+	"WM!(" -> "M!("
+	"WM!(" -> W
+	T [label="3-T"]
+	"\"" [label="4-\""]
+	"T\"" [label="7-T\""]
+	"T\"" -> "\""
+	"T\"" -> T
+	")BD" [label="4-)BD"]
+	"-" [label="4--"]
+	")BD-" [label="8-)BD-"]
+	")BD-" -> "-"
+	")BD-" -> ")BD"
+	"?" [label="4-?"]
+	FJL [label="4-FJL"]
+	"?FJL" [label="8-?FJL"]
+	"?FJL" -> FJL
+	"?FJL" -> "?"
+	O [label="5-O"]
+	"WM!(" [label="5-WM!("]
+	"OWM!(" [label="10-OWM!("]
+	"OWM!(" -> "WM!("
+	"OWM!(" -> O
+	A [label="6-A"]
+	S [label="7-S"]
+	AS [label="13-AS"]
+	AS -> S
+	AS -> A
+	"T\"" [label="7-T\""]
+	v [label="7-v"]
+	"T\"v" [label="14-T\"v"]
+	"T\"v" -> v
+	"T\"v" -> "T\""
+	")BD-" [label="8-)BD-"]
+	"?FJL" [label="8-?FJL"]
+	")BD-?FJL" [label="16-)BD-?FJL"]
+	")BD-?FJL" -> "?FJL"
+	")BD-?FJL" -> ")BD-"
+	H [label="8-H"]
+	Y [label="8-Y"]
+	HY [label="16-HY"]
+	HY -> Y
+	HY -> H
+	"OWM!(" [label="10-OWM!("]
+	I [label="11-I"]
+	"OWM!(I" [label="21-OWM!(I"]
+	"OWM!(I" -> I
+	"OWM!(I" -> "OWM!("
+	AS [label="13-AS"]
+	"T\"v" [label="14-T\"v"]
+	"AST\"v" [label="27-AST\"v"]
+	"AST\"v" -> "T\"v"
+	"AST\"v" -> AS
+	")BD-?FJL" [label="16-)BD-?FJL"]
+	HY [label="16-HY"]
+	")BD-?FJLHY" [label="32-)BD-?FJLHY"]
+	")BD-?FJLHY" -> HY
+	")BD-?FJLHY" -> ")BD-?FJL"
+	f [label="20-f"]
+	p [label="20-p"]
+	fp [label="40-fp"]
+	fp -> p
+	fp -> f
+	"OWM!(I" [label="21-OWM!(I"]
+	b [label="21-b"]
+	"OWM!(Ib" [label="42-OWM!(Ib"]
+	"OWM!(Ib" -> b
+	"OWM!(Ib" -> "OWM!(I"
+	k [label="21-k"]
+	"AST\"v" [label="27-AST\"v"]
+	"kAST\"v" [label="48-kAST\"v"]
+	"kAST\"v" -> "AST\"v"
+	"kAST\"v" -> k
+	c [label="29-c"]
+	"'" [label="30-'"]
+	"c'" [label="59-c'"]
+	"c'" -> "'"
+	"c'" -> c
+	"," [label="30-,"]
+	")BD-?FJLHY" [label="32-)BD-?FJLHY"]
+	",)BD-?FJLHY" [label="62-,)BD-?FJLHY"]
+	",)BD-?FJLHY" -> ")BD-?FJLHY"
+	",)BD-?FJLHY" -> ","
+	m [label="37-m"]
+	w [label="38-w"]
+	mw [label="75-mw"]
+	mw -> w
+	mw -> m
+	fp [label="40-fp"]
+	"OWM!(Ib" [label="42-OWM!(Ib"]
+	"fpOWM!(Ib" [label="82-fpOWM!(Ib"]
+	"fpOWM!(Ib" -> "OWM!(Ib"
+	"fpOWM!(Ib" -> fp
+	"kAST\"v" [label="48-kAST\"v"]
+	"
+" [label="52-
+"]
+	"kAST\"v
+" [label="100-kAST\"v
+"]
+	"kAST\"v
+" -> "
+"
+	"kAST\"v
+" -> "kAST\"v"
+	y [label="53-y"]
+	"c'" [label="59-c'"]
+	"yc'" [label="112-yc'"]
+	"yc'" -> "c'"
+	"yc'" -> y
+	u [label="59-u"]
+	",)BD-?FJLHY" [label="62-,)BD-?FJLHY"]
+	"u,)BD-?FJLHY" [label="121-u,)BD-?FJLHY"]
+	"u,)BD-?FJLHY" -> ",)BD-?FJLHY"
+	"u,)BD-?FJLHY" -> u
+	d [label="65-d"]
+	i [label="72-i"]
+	di [label="137-di"]
+	di -> i
+	di -> d
+	g [label="74-g"]
+	mw [label="75-mw"]
+	gmw [label="149-gmw"]
+	gmw -> mw
+	gmw -> g
+	h [label="76-h"]
+	"fpOWM!(Ib" [label="82-fpOWM!(Ib"]
+	"hfpOWM!(Ib" [label="158-hfpOWM!(Ib"]
+	"hfpOWM!(Ib" -> "fpOWM!(Ib"
+	"hfpOWM!(Ib" -> h
+	r [label="91-r"]
+	l [label="93-l"]
+	rl [label="184-rl"]
+	rl -> l
+	rl -> r
+	s [label="96-s"]
+	"kAST\"v
+" [label="100-kAST\"v
+"]
+	"skAST\"v
+" [label="196-skAST\"v
+"]
+	"skAST\"v
+" -> "kAST\"v
+"
+	"skAST\"v
+" -> s
+	a [label="108-a"]
+	n [label="108-n"]
+	an [label="216-an"]
+	an -> n
+	an -> a
+	"yc'" [label="112-yc'"]
+	"u,)BD-?FJLHY" [label="121-u,)BD-?FJLHY"]
+	"yc'u,)BD-?FJLHY" [label="233-yc'u,)BD-?FJLHY"]
+	"yc'u,)BD-?FJLHY" -> "u,)BD-?FJLHY"
+	"yc'u,)BD-?FJLHY" -> "yc'"
+	di [label="137-di"]
+	gmw [label="149-gmw"]
+	digmw [label="286-digmw"]
+	digmw -> gmw
+	digmw -> di
+	"hfpOWM!(Ib" [label="158-hfpOWM!(Ib"]
+	o [label="158-o"]
+	"hfpOWM!(Ibo" [label="316-hfpOWM!(Ibo"]
+	"hfpOWM!(Ibo" -> o
+	"hfpOWM!(Ibo" -> "hfpOWM!(Ib"
+	t [label="162-t"]
+	e [label="174-e"]
+	te [label="336-te"]
+	te -> e
+	te -> t
+	rl [label="184-rl"]
+	"skAST\"v
+" [label="196-skAST\"v
+"]
+	"rlskAST\"v
+" [label="380-rlskAST\"v
+"]
+	"rlskAST\"v
+" -> "skAST\"v
+"
+	"rlskAST\"v
+" -> rl
+	an [label="216-an"]
+	"yc'u,)BD-?FJLHY" [label="233-yc'u,)BD-?FJLHY"]
+	"anyc'u,)BD-?FJLHY" [label="449-anyc'u,)BD-?FJLHY"]
+	"anyc'u,)BD-?FJLHY" -> "yc'u,)BD-?FJLHY"
+	"anyc'u,)BD-?FJLHY" -> an
+	digmw [label="286-digmw"]
+	"hfpOWM!(Ibo" [label="316-hfpOWM!(Ibo"]
+	"digmwhfpOWM!(Ibo" [label="602-digmwhfpOWM!(Ibo"]
+	"digmwhfpOWM!(Ibo" -> "hfpOWM!(Ibo"
+	"digmwhfpOWM!(Ibo" -> digmw
+	te [label="336-te"]
+	"rlskAST\"v
+" [label="380-rlskAST\"v
+"]
+	"terlskAST\"v
+" [label="716-terlskAST\"v
+"]
+	"terlskAST\"v
+" -> "rlskAST\"v
+"
+	"terlskAST\"v
+" -> te
+	" " [label="381- "]
+	"anyc'u,)BD-?FJLHY" [label="449-anyc'u,)BD-?FJLHY"]
+	" anyc'u,)BD-?FJLHY" [label="830- anyc'u,)BD-?FJLHY"]
+	" anyc'u,)BD-?FJLHY" -> "anyc'u,)BD-?FJLHY"
+	" anyc'u,)BD-?FJLHY" -> " "
+	"digmwhfpOWM!(Ibo" [label="602-digmwhfpOWM!(Ibo"]
+	"terlskAST\"v
+" [label="716-terlskAST\"v
+"]
+	"digmwhfpOWM!(IboterlskAST\"v
+" [label="1318-digmwhfpOWM!(IboterlskAST\"v
+"]
+	"digmwhfpOWM!(IboterlskAST\"v
+" -> "terlskAST\"v
+"
+	"digmwhfpOWM!(IboterlskAST\"v
+" -> "digmwhfpOWM!(Ibo"
+	" anyc'u,)BD-?FJLHY" [label="830- anyc'u,)BD-?FJLHY"]
+	"digmwhfpOWM!(IboterlskAST\"v
+" [label="1318-digmwhfpOWM!(IboterlskAST\"v
+"]
+	" anyc'u,)BD-?FJLHYdigmwhfpOWM!(IboterlskAST\"v
+" [label="2148- anyc'u,)BD-?FJLHYdigmwhfpOWM!(IboterlskAST\"v
+"]
+	" anyc'u,)BD-?FJLHYdigmwhfpOWM!(IboterlskAST\"v
+" -> "digmwhfpOWM!(IboterlskAST\"v
+"
+	" anyc'u,)BD-?FJLHYdigmwhfpOWM!(IboterlskAST\"v
+" -> " anyc'u,)BD-?FJLHY"
+}
